@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Laravel Notes</title>
+  <link rel="canonical" href="https://laravel-notes.com">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Website",
+        "name": "Laravel Notes"
+        "description": "Articles and Code snippets to help Laravel developers.",
+        "url": "https://laravel-notes.com"
+      }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Varela;
+  src: url(fonts/Varela/Varela-Regular.ttf);
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Varela;
+  padding: 20px;
+  padding: 5px 200px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  color: #F34423;
+}
+
+.header h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo{
+  width: 70px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <amp-img src="img/logo.png" class="logo" width="35" height="60" alt="Laravel Notes Logo"></amp-img>
+  <h2>Laravel Notes</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <a href="articles/create-custom-validation-rules-in-laravel.html">
+      <div class="card">
+        <h2>Create custom validation rules in Laravel</h2>
+        <h5>Sep 14, 2020</h5>
+        <p>Laravel provides many validation rules. For complex validation rules, we can create our own custom validation to validate a form.</p>
+      </div>
+    </a>
+    <div class="card">
+      <a href="articles/5-features-that-can-be-customised-in-laravel-registration.html">
+        <h2>5 features that can be customised in Laravel registration</h2>
+        <h5>Sep 14, 2020</h5>
+        <p>Laravel registration is highly customisable. It provides many options to customize registration and login funtionalities. </p>
+      </a>
+    </div>
+  </div>
+  
+</div>
+
+<div class="footer">
+  <p>- Laravel Notes 2020 -</p>
+</div>
+
+</body>
+</html>
